@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f1d40fb8670974c94c4b97d69bc8cf, type: 3}
+  m_Name: PanelAnimPresetPopup
+  m_EditorClassIdentifier: 
+  openCurve: {fileID: 11400000, guid: fc86132d9a840684484d6fc3c0c0fc3d, type: 2}
+  closeCurve: {fileID: 11400000, guid: fc86132d9a840684484d6fc3c0c0fc3d, type: 2}
+  openDuration: 0.3
+  closeDuration: 0.3
+  openPos: {x: 0, y: 0, z: 0}
+  closePos: {x: 0, y: -200, z: 0}
+  openRot: {x: 0, y: 0, z: 0}
+  closeRot: {x: 0, y: 0, z: 0}
+  openScale: {x: 1, y: 1, z: 1}
+  closeScale: {x: 0, y: 0, z: 1}
+  fade: 1
