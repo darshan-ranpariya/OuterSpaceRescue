@@ -89,7 +89,7 @@ public class PlayerMove : MonoBehaviour
         Vector2 force = new Vector2(1 * x, 1 * y);
         flame.flipX = !flame.flipX;
         //print("velocity: " + rb.velocity + " || magnitude: " + rb.velocity.magnitude);
-        if (rb.velocity.magnitude < maxSpeed)
+        if (rb.linearVelocity.magnitude < maxSpeed)
         {
             rb.AddForce(force, ForceMode2D.Impulse);
         }
@@ -108,9 +108,9 @@ public class PlayerMove : MonoBehaviour
         if (x < 0) return;
         transform.rotation = Quaternion.Euler(0f, 180f, 0f);
         x *= -1;
-        Vector2 v = rb.velocity;
+        Vector2 v = rb.linearVelocity;
         v.x = 0;
-        rb.velocity = v;
+        rb.linearVelocity = v;
     }
 
     public void ResetSide()
@@ -118,9 +118,9 @@ public class PlayerMove : MonoBehaviour
         if (x > 0) return;
         transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         x *= -1;
-        Vector2 v = rb.velocity;
+        Vector2 v = rb.linearVelocity;
         v.x = 0;
-        rb.velocity = v;
+        rb.linearVelocity = v;
     }
 
     public void ResetPos()
