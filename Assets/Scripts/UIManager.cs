@@ -179,6 +179,7 @@ public class UIManager : MonoBehaviour
   
     private void GetParmsAndSave()
     {
+        return;
         string url = "http://www.triangulargamestudio.com/cardList/outerspace/?customer_id=357752&card_no=T5MJNMLO&account_id=753888&site_id=1020&win_score=20.00&win_time=5";
 
     #if UNITY_EDITOR
